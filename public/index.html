@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+        <title>GeneralFE Test</title>
+    </head>
+
+    <body class="column center">
+        <header class="around">
+            <div>TESTE API GERAL</div>
+            <div>USO GERAL</div>
+        </header>
+
+        <main class="column around">
+            <form id="axiosTest" class="column around">
+                <input 
+                id="name"
+                type="text"
+                placeholder="nome"
+                >
+
+                <input 
+                    id="surname"
+                    type="text"
+                    placeholder="sobrenome"
+                >
+
+                <input 
+                    id="cpf"
+                    type="text"
+                    placeholder="cpf"
+                >
+
+                <select
+                    id="gender"
+                >
+                    <option value="placeholder">selecione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Nao-Binario">Nao-Binario</option>
+                </select>
+
+                <input 
+                    id="age"
+                    type="number"
+                    placeholder="Idade"
+                    min="20" max="90"
+                >
+            </form>
+
+            <button
+                id="submitAxios" 
+                type="submit"
+                form="axiosTest"
+            >SUBMIT</button>
+
+            <button
+                id="getAxios"
+                type="click"
+            >GET</button>
+        </main>
+
+        <footer class="around">
+
+        </footer>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="module" src="./scripts/index.js"></script>
+    </body>
+</html>
